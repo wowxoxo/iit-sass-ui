@@ -9,3 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.0.1] - 2019-01-17
 ### Added
 - first draws
+
+## [0.1.0] - 2019-01-18
+### Added
+- styles from partners project
+- package with components
