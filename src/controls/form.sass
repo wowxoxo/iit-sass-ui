@@ -1,0 +1,189 @@
+.form
+    transform: translateZ(0)
+    transform: translate3d(0, 0, 0)
+    background: $color-white
+    box-shadow: $shadow
+
+    @media (min-width: $media-xs)
+        padding: 6 * $base-indent 5 * $base-indent
+
+    &_zero
+        background: none
+        padding: 0
+        box-shadow: none
+
+
+    &_order
+        position: absolute
+        // right: 120px
+        z-index: 100
+
+        @media (min-width: $media-xs)
+            display: none
+            width: 320px
+            right: calc(50% - 500px)
+
+        @media (min-width: $media-lg)
+            display: block
+            width: 320px
+            right: calc(50% - 500px)
+
+        @media (min-width: $media-xl)
+            width: 380px
+            right: calc(50% - 600px)
+
+
+        @media (min-width: $media-xxl)
+            width: 420px
+            right: calc(50% - 680px)
+
+
+        .form
+
+            &__title
+                max-width: 37.5 * $base-indent
+                margin-bottom: 3 * $base-indent
+
+    &_request
+        .form
+            &__title
+                margin-bottom: 3 * $base-indent
+
+                &_big
+                    margin-bottom: 0 * $base-indent
+                    padding-bottom: 4 * $base-indent
+
+    &_modal
+        .form
+            &__title
+                max-width: 37.5 * $base-indent
+                margin-bottom: 3 * $base-indent
+
+    &_fixed
+        position: fixed
+        top: 0
+
+    &__title
+        // font-size: $fsize
+        font-weight: 400
+        text-align: center
+        margin: 0 auto
+        line-height: 1.25
+
+        &_big
+            // text-align: left
+            // border-bottom: $border
+
+
+    &__row
+
+        & + .form__row
+            margin-top: 3.75 * $base-indent
+
+        &_policy
+            font-size: $fsize-smallest
+            line-height: 1.4
+
+            .checkbox
+                margin-bottom: 0
+
+    &_search-inside
+        padding: 0
+        box-shadow: none
+        display: flex
+        margin-top: 3 * $base-indent
+
+        @media (min-width: $media-xs)
+            flex-direction: column
+
+        @media (min-width: $media-sm)
+            flex-direction: row
+
+        .form
+
+            &__input
+                border: 1px solid $color-white-2
+                flex: 10
+                // height: 6 * $base-indent
+                display: block
+                line-height: 2
+                padding: 0 2 * $base-indent
+
+                &:active,
+                &:focus
+                    outline: none
+
+
+            &__button
+                flex: 1
+                @media (min-width: $media-xs)
+                    margin-top: 2 * $base-indent
+
+                @media (min-width: $media-sm)
+                    margin-top: 0
+
+    &__submitted
+        position: absolute
+        top: 0
+        height: 100%
+        background: $color-white
+        z-index: 3
+        width: 100%
+        left: 0
+        padding: 0 20px
+        text-align: center
+        display: none
+
+        &-content
+            position: relative
+            top: 35%
+            color: $color-green
+            font-size: $fsize-h5
+
+        &-message
+            font-size: $fsize
+
+        &_inactive
+            display: none
+
+        &_active
+            display: block
+
+    &__close
+        position: absolute
+        top: 0
+        right: 0
+        height: 6 * $base-indent
+        width: 6 * $base-indent
+        font-size: $fsize-h2
+        line-height: 1
+        background: $color-white
+        color: $color-gray-light-3
+        border: none
+        cursor: pointer
+        transition: $transition
+        padding-right: 2 * $base-indent
+        padding-top: 1 * $base-indent
+
+        &:hover
+            color: $color-pink
+            // background: $color-gray-light-0
+
+
+    .has-error
+        .input__input
+            transition: $transition
+            border-color: $color-pink
+
+        .checkbox__indicator
+            transition: $transition
+            border-color: $color-pink
+
+        .textarea__textarea
+            transition: $transition
+            border-color: $color-pink
+
+
+
+.test-section2
+    background: $color-pink

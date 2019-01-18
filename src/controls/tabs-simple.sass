@@ -1,0 +1,47 @@
+.tabs-simple
+    &__tabs
+        list-style: none
+        margin: 0
+        padding: 0
+        border-bottom: 1px solid $color-gray-light-1
+
+        @media (min-width: $media-xs)
+            [class*='col-']
+                min-width: 250px
+                // for future
+
+    &__item
+        background: none
+        color: $color-dark
+        display: block
+        padding: 2 * $base-indent 0 2 * $base-indent 0
+        cursor: pointer
+        width: 100%
+        font-weight: 300
+        border-bottom: 2px solid transparent
+        transition: $transition-fast
+        font-size: 18px
+        position: relative
+        top: 1px
+        height: 100%
+        user-select: none
+        display: flex
+        align-items: flex-end
+        // justify-content: center
+
+        &:hover
+            color: $color-second-hover
+
+        &_state_active
+            color: $color-second
+            font-weight: 400
+            border-bottom: 2px solid $color-second
+
+    &__content-item
+        display: none
+        // background: $color-gray-light-2
+        padding: 15px
+
+        &_state_active
+            display: inherit
+            padding-top: 5 * $base-indent

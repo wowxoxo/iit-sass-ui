@@ -1,0 +1,110 @@
+.card
+    background: $color-primary
+    padding: 7.5 * $base-indent
+    padding-left: 8.5 * $base-indent
+    color: $color-white
+    font-size: $old-fsize
+    font-weight: 200
+    position: relative
+    margin-left: 0 * $base-indent
+    margin-right: 0 * $base-indent
+
+    &__title
+        font-size: $old-fsize-h3
+        font-weight: 400
+        z-index: 1
+        position: relative
+
+    &__content
+        margin-top: 1.25 * $base-indent
+        z-index: 1
+        position: relative
+
+        @media (min-width: $media-xs)
+            padding-right: 200px
+
+    &__button
+        margin-top: 0.75 * $base-indent
+        z-index: 1
+        position: relative
+
+    &__button-desc
+        padding-top: 1.75 * $base-indent
+        color: $color-white-op7
+        z-index: 1
+        position: relative
+
+    &__letter
+        // position: absolute
+        // font-size: 180px
+        // font-weight: 700
+        // top: 0
+        // right: 160px
+        // z-index: 0
+        // opacity: .25
+
+        position: absolute
+        font-size: 220px
+        font-weight: 700
+        top: 0 * $base-indent
+        right: 160px
+        z-index: 0
+        opacity: .05
+        user-select: none
+
+.card
+    &_pink
+        padding: 7.5 * $base-indent
+        padding-left: 8.5 * $base-indent
+        padding-top: 10 * $base-indent
+        padding-bottom: 11.5 * $base-indent
+        background-image: $color-product-vipdoc-gradient
+
+        .card
+            &__title
+                @extend .h3
+            &__content
+                margin-top: 20px
+
+    &_green
+        padding: 7.5 * $base-indent
+        padding-left: 8.5 * $base-indent
+        padding-top: 10 * $base-indent
+        padding-bottom: 11.5 * $base-indent
+        background-image: $color-product-vip-report-gradient
+
+        .card
+            &__title
+                @extend .h3
+            &__content
+                margin-top: 20px
+
+    &_smev
+        padding: 7.5 * $base-indent
+        padding-left: 8.5 * $base-indent
+        padding-top: 10 * $base-indent
+        padding-bottom: 11.5 * $base-indent
+        background-image: $color-product-smev-gradient
+
+        .card
+            &__title
+                @extend .h3
+
+                .link
+                    transition: $transition-fast
+                    &:hover,
+                    &:focus
+                        color: $color-primary-light-3
+                        background-image: linear-gradient(to top, $color-primary-light-3 1px, transparent 1px)
+
+            &__content
+                margin-top: 20px
+
+            &__letter
+                right: 180px
+                // top: -40px
+                opacity: 0.1
+
+            // &__content
+            //     color: $color-black-2
+            //     font-weight: 300

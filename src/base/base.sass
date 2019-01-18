@@ -1,0 +1,104 @@
+body
+    line-height: 1.5
+    font-family: 'Circe', sans-serif
+    color: $color-black-2
+    margin: 0
+    font-weight: 200
+    background: $color-white
+
+    @media (min-width: $media-xs)
+        line-height: 1.375
+        font-size: $fsize-md
+
+    @media (min-width: $media-md)
+        line-height: 1.5
+        font-size: $fsize
+
+
+p
+    font-weight: 300
+
+b
+    font-weight: 600
+
+
+.font
+    &_style
+        &_light
+            font-weight: 200
+
+    &_size
+        &_base
+            font-size: $old-fsize
+
+.font_size_base + .list_small
+    margin-top: 2 * $base-indent
+
+// p + p
+//     margin-top: 1.5 * $fsize
+
+// p + ul,
+// p + ol,
+// p + img,
+// ol + img,
+// ul + img
+//     margin-top: 1.25 * $fsize
+//
+// ul,
+// ol
+//     margin-bottom: 0
+//
+// ul + p,
+// ol + p,
+// img + p
+//     margin-top: 2.25 * $fsize
+//
+//
+//
+// ol + ul,
+// ul + ol,
+// ul + ul,
+// ol + ol
+//     margin-top: 2 * $fsize
+
+p,
+ol,
+ul,
+table,
+img,
+.iframe_learning
+    margin-bottom: 1.5 * $fsize
+
+.small-text
+    // font-size: $font-small
+    line-height: 1.25 * $old-fsize
+    margin: 0
+    padding: 0
+
+a
+    color: $color-old-primary
+
+    &:hover
+        color: $color-old-primary
+        text-decoration: underline
+
+
+.h_no-top
+    margin-top: 0
+
+.small-text
+    font-size: $fsize-smallest
+    // color: $color-black-op6
+    line-height: $fsize
+    margin: 0
+    padding: 0
+    position: relative
+    top: -0.25 * $base-indent
+
+
+ul + p,
+ol + p
+    margin-top: 3.5 * $base-indent
+
+strong
+    font-weight: 600

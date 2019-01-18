@@ -1,0 +1,47 @@
+.phone
+    &__number
+        @media (min-width: $media-xs)
+            font-size: $old-fsize-phone
+            line-height: 1
+            margin-top: 0
+
+        @media (min-width: $media-xl)
+            margin-top: 0
+
+            &-link
+                color: $color-black-2
+                transition: $transition
+                font-size: $fsize
+                font-weight: 500
+
+                &:hover
+                    text-decoration: none
+                    color: $color-black-2
+                    opacity: 0.7
+
+        @media (min-width: $media-xs)
+            &-link
+                font-size: $old-fsize-phone
+
+        @media (min-width: $media-md)
+            &-link
+                font-size: $fsize-md
+
+        @media (min-width: $media-xl)
+            &-link
+                font-size: $old-fsize-phone
+
+    &__text
+        margin-top: 0.5 * $base-indent
+        font-size: $fsize-smallest
+        color: $color-black-2
+        font-weight: 400
+        line-height: 1.15
+
+        @media (min-width: $media-xs)
+            white-space: normal
+            margin-top: 0.5 * $base-indent
+
+        @media (min-width: $media-xl)
+            white-space: normal
+            margin-top: 0.5 * $base-indent

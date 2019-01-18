@@ -1,0 +1,119 @@
+.radio
+    display: inline-block
+    margin-bottom: 2 * $base-indent
+    line-height: 3 * $base-indent
+    vertical-align: top
+
+.radio + .radio
+    margin-left: 4 * $base-indent
+
+.radio__input
+    &:not(checked)
+        position: absolute
+        opacity: 0
+
+        + label
+            position: relative
+            padding: 0 0 0 4 * $base-indent
+            display: block
+
+            &:before
+                content: ''
+                position: absolute
+                top: 1px
+                left: 0
+                width: 2.5 * $base-indent
+                height: 2.5 * $base-indent
+                +border(1px, solid, $color-gray-light-2)
+                // @extend .border
+                // border-color: $color-gray-light-2
+                border-radius: 50%
+                background: $color-white
+                transition: $transition
+
+    &:checked + label:before
+        @extend .border
+        border-color: $color-primary
+
+    &:not(checked) + label:after
+        content: ''
+        position: absolute
+        opacity: 0
+        transition: $transition
+        top: 5px
+        left: 4px
+        width: 1.5 * $base-indent
+        height: 1.5 * $base-indent
+        background: $color-primary
+        border-radius: 50%
+
+    &:checked + label
+        color: $color-primary
+
+        &:after
+            opacity: 1
+
+    + label
+        cursor: pointer
+
+input.radio__input:disabled
+    + label
+        color: $color-gray-light-2
+        cursor: default
+
+        &:before
+            background-color: $color-gray-light-2
+
+    &:checked + label
+        font-weight: 300
+
+        &:after
+            background: $color-gray-light-2
+            border-color: $color-gray-light-2
+            width: 1.5 * $base-indent
+            height: 1.5 * $base-indent
+
+        &:before
+            content: ''
+            position: absolute
+            top: 1px
+            left: 0
+            width: 2.5 * $base-indent
+            height: 2.5 * $base-indent
+            @extend .border
+            border-color: $color-gray-light-2
+            border-radius: 50%
+            background: $color-white
+
+.radio__input
+    &:not(checked):hover + label
+        &:before, &:after
+            transform: scale(1.15)
+            transition: all 0.2s ease-out
+            animation: ex4 2s infinite
+            animation: none
+
+        &:before
+            @extend .border
+            border-color: $color-primary
+
+    &:disabled:hover + label:before
+        border: 1px solid $color-gray-light-2
+
+@keyframes ex4
+    0%
+        transform: scale(1)
+
+    50%
+        transform: scale(1.5)
+
+    100%
+        transform: scale(1)
+
+
+.ex4
+    animation: ex4 1s infinite
+
+.radio__input:disabled:hover + label
+    &:before, &:after
+        transform: scale(1)

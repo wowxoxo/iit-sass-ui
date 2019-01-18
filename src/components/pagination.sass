@@ -1,0 +1,46 @@
+.pagination
+    position: relative
+
+    // &::after
+    //     content: ''
+    //     height: 1px
+    //     bottom: 0
+    //     background: $color-gray-light-1
+    //     position: absolute
+    //     left: -999999px
+    //     right: -999999px
+    //     z-index: -1
+
+    &__item
+        width: 6 * $base-indent
+        height: 6 * $base-indent
+        display: inline-block
+        text-align: center
+        // background-image: none
+        line-height: 2.3
+        border-bottom: 2px solid transparent
+        color: $color-dark
+        text-decoration: none
+        transition: $transition-fast
+
+        &:hover
+            text-decoration: none
+            background-image: none
+            border-width: 1px
+            border-color: $color-primary-light-3
+            color: $color-primary-light-3
+
+        &_dots
+            &:hover
+                border-color: transparent
+
+        &_active
+            color: $color-second
+            font-weight: 400
+            border-color: $color-second
+
+            &:hover
+                border-color: rgba($color-second, 0.7)
+                color: rgba($color-second, 0.7)
+                border-width: 2px
+                cursor: default

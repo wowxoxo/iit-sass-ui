@@ -1,0 +1,85 @@
+.accordion
+    &__tabs
+        list-style: none
+        margin: 0
+        padding: 0
+        border-bottom: 1px solid $color-gray-light-1
+
+
+    &__item
+        background: none
+        color: $color-primary-light-3
+        display: inline-block
+        padding: 0.5 * $base-indent 0 2 * $base-indent 0
+        cursor: pointer
+        font-weight: 400
+        // border-bottom: 2px solid transparent
+        transition: $transition-fast
+        font-size: $fsize
+        position: relative
+        top: 1px
+        user-select: none
+        // display: flex
+        // align-items: flex-end
+        // justify-content: center
+
+        &:hover
+            color: $color-second-hover
+
+            .accordion
+                &__arrow
+                    svg
+                        fill: $color-second
+
+        &_state_active
+            color: $color-second
+            font-weight: 400
+            // border-bottom: 2px solid $color-second
+
+    &__content-item
+        display: none
+        font-weight: 300
+        // background: $color-gray-light-2
+        // padding: 15px
+
+        &_state_active
+            display: inherit
+            padding-top: 1 * $base-indent
+            padding-bottom: 4 * $base-indent
+
+    &__title
+        display: inline-block
+
+    &__arrow
+        display: inline-block
+        position: relative
+        top: 10px
+        left: 4px
+
+        svg
+            transition: $transition-fast
+            transform: rotate(0deg)
+
+    &__separator
+        border-bottom: 1px solid $color-gray-light-0
+
+.accordion__item_state_active
+    .accordion__arrow
+        svg
+            transform: rotate(180deg)
+            fill: $color-second
+
+
+// .accordion_smev
+//     .accordion
+//         &__item
+//             &:hover
+//                 color: $color-product-smev-1
+//
+//                 .accordion
+//                     &__arrow
+//                         svg
+//                             fill: $color-product-smev-1
+//
+//             &_state_active
+//                 color: $color-product-smev-1

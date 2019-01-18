@@ -1,0 +1,60 @@
+.docs-list
+    &__item
+        display: block
+        // display: flex
+        // align-items: center
+        position: relative
+        min-height: 5 * $base-indent
+        margin-bottom: 3 * $base-indent
+
+        &:hover
+            text-decoration: none
+
+            .docs-list
+                &__icon
+                    // svg
+                    //     fill: $color-second
+                    .icon-hover
+                        opacity: 1
+
+                    .icon-static
+                        opacity: 0
+
+                &__link
+                    @extend .link:hover
+
+    &__icon
+        margin-right: 2 * $base-indent
+        float: left
+        display: block
+        position: absolute
+        svg
+            transition: $transition-fast
+
+    &__title
+        // @extend .link
+        // @extend .link_middle
+        line-height: 1.25
+        font-size: $fsize
+        margin-left: 55px
+        display: block
+        font-weight: 300
+
+    &__link
+        display: inline
+        @extend .link
+        @extend .link_middle
+
+.docs-list
+    &__icon
+        & .icon-static
+            opacity: 1
+            left: -4px
+            position: absolute
+
+        & .icon-hover
+            opacity: 0
+            left: -4px
+
+        & svg
+            transition: $transition

@@ -1,0 +1,22 @@
+.badge
+    display: inline-block
+    padding: 1px 12px
+    border-radius: 12px
+    font-size: $fsize-micro
+    color: $color-white
+    text-transform: uppercase
+    line-height: 21px
+    transition: $transition-fast
+
+    &_color
+        &_orange
+            background: $color-second
+
+        &_blue
+            background: $color-primary-light-3-old
+
+    &:focus,
+    &:hover
+        opacity: $opacity-2
+        color: $color-white
+        text-decoration: none

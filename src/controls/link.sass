@@ -1,0 +1,75 @@
+.link
+    color: $color-primary-light-3
+    transition: $transition-fast
+    position: relative
+    // background-image: linear-gradient(to top, $color-primary-light-3-op3 1px, transparent 1px)
+    // background-repeat: repeat-x
+    background-position: 0 -2px
+
+    .icon-external,
+    .icon-anchor
+        transition: $transition-fast
+
+    &:hover,
+    &:focus
+        color: $color-second
+        text-decoration: none
+        background-image: linear-gradient(to top, $color-second-op3 1px, transparent 1px)
+
+        .icon-external,
+        .icon-anchor
+            fill: $color-second
+
+    &_hero
+        &:hover
+            color: $color-primary-light-3
+
+    &_light
+        color: $color-white-2
+        background-image: linear-gradient(to top, $color-white-op3 1px, transparent 1px)
+
+        &:hover,
+        &:focus
+            color: $color-second
+
+    &_light-2x
+        color: $color-white-2
+        background-image: linear-gradient(to top, $color-white-op3 2px, transparent 2px)
+
+        &:hover
+            color: $color-second
+            background-image: linear-gradient(to top, $color-second-op3 2px, transparent 2px)
+
+    &_dark
+        color: $color-black-2-op9
+        background-image: linear-gradient(to top, $color-black-2-op5 1px, transparent 1px)
+
+        &:hover,
+        &:focus
+            color: $color-black
+            background-image: linear-gradient(to top, $color-black-2-op5 1px, transparent 1px)
+
+    &_black
+        color: $color-black-2
+
+        &:hover,
+        &:focus
+            color: $color-second
+            background-image: none
+
+    &_36
+        background-position: 0 1.3em
+        // background-size: 10px 9px
+
+        &:hover,
+        &:focus
+            color: $color-second
+
+    &_middle
+        background-position: 0 -3px
+
+
+
+.h2
+    .link
+        background-position: 0 -8px

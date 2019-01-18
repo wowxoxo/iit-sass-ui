@@ -1,0 +1,72 @@
+.breadcrumb
+    list-style: none
+    font-size: $fsize-small
+    font-weight: 300
+    padding-left: 0
+    margin-bottom: 0
+
+    &__item
+        display: inline
+        color: $color-grey-2
+
+        + .breadcrumb__item::before
+            margin: 0.5 * $base-indent 1.5 * $base-indent
+            content: ''
+            display: inline-block
+            height: 2px
+            width: 2px
+            background: $color-second
+            position: relative
+            // top: -0.4 * $base-indent
+
+    &__link
+        color: $color-primary-light-3
+        transition: $transition-fast
+        position: relative
+        // background-image: linear-gradient(to top, $color-primary-light-3-op3 1px, transparent 1px)
+
+        &:hover
+            color: $color-second
+            text-decoration: none
+            background-image: linear-gradient(to top, $color-second-op3 1px, transparent 1px)
+
+.breadcrumb_hero
+    & .breadcrumb__item::before
+        background: $color-white
+
+    & .breadcrumb__item
+        color: $color-white-op7
+
+    & .breadcrumb__link
+        color: $color-white-op5
+        background-image: linear-gradient(to top, $color-white-op3 1px, transparent 1px)
+
+        &:hover
+            color: $color-white-op7
+            // background-image: linear-gradient(to top, $color-white-op5 1px, transparent 1px)
+
+    & .breadcrumb__link
+        color: $color-white-op5
+        background-image: linear-gradient(to top, $color-white-op3 1px, transparent 1px)
+
+        &:hover
+            color: $color-white-op7
+            // background-image: linear-gradient(to top, $color-white-op5 1px, transparent 1px)
+
+.breadcrumb_dark
+    & .breadcrumb__link
+        color: $color-black-2-op7
+        background-image: linear-gradient(to top, $color-black-2-op7 1px, transparent 1px)
+
+        &:hover
+            color: $color-black-2
+            // background-image: linear-gradient(to top, $color-white-op5 1px, transparent 1px)
+
+.breadcrumb_light
+    & .breadcrumb__link
+        color: $color-white-op7
+        background-image: linear-gradient(to top, $color-white-op3 1px, transparent 1px)
+
+        &:hover
+            color: $color-white
+            // background-image: linear-gradient(to top, $color-white-op5 1px, transparent 1px)

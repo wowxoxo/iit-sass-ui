@@ -1,0 +1,178 @@
+.tabs
+    padding-top: 2.5 * $base-indent
+
+    &__buttons
+        display: flex
+        // margin-bottom: 8 * $base-indent
+
+    &__button
+        // @extend .button_no
+        border: 0
+        background: none
+        cursor: pointer
+        display: flex
+        // align-items: start
+        // flex-direction: column
+        height: auto
+        user-select: none
+
+        &:focus
+            outline: none
+
+        &:hover
+            .step__num
+                &::after
+                    border-color: $color-primary
+
+        &:first-child
+            padding-left: 2.5 * $base-indent
+            margin-left: -2.5 * $base-indent
+
+    &__separator
+        // margin-top: 5 * $base-indent
+        margin-right: 3 * $base-indent
+        margin-left: 2 * $base-indent
+
+.step
+    display: block
+    position: relative
+
+    &__num-container
+        width: 90px
+        height: 90px
+        position: relative
+        display: flex
+        // align-items: center
+        justify-content: center
+
+    &__num
+        display: block
+        @media (min-width: $media-xs)
+            font-size: $fsize
+            color: $color-black
+            position: relative
+            width: 52px
+            height: 52px
+            line-height: 58px
+            font-weight: 600
+            transition: $transition-fast
+
+            display: flex
+            justify-content: center
+            z-index: 1
+
+
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            border: 4px solid $color-primary-light
+            border-radius: 50%
+            z-index: -1
+            transition: $transition-fast
+
+    &__icon
+        display: block
+
+    &__text
+        position: relative
+        top: -10px
+        font-weight: 400
+        font-size: $old-fsize
+        line-height: 18px
+        display: block
+
+        @media (min-width: $media-xs)
+            max-width: 12.5 * $base-indent
+            padding-left: 2.5 * $base-indent
+
+
+.tabs__button_active
+
+    .step__num
+        &::after
+            transform: scale(1.7)
+            border-color: $color-primary
+            border-width: 26px
+
+    .step__text
+        font-weight: 700
+
+
+.step__num-container
+    .step__icon
+        svg
+            position: absolute
+            z-index: 1
+            transform: scale(.4)
+            transition: opacity .25s ease-in-out, overflow .25s ease-in-out, transform .25s ease-in-out
+            top: -44px
+            left: 0
+
+.step__num-container
+    @media (min-width: $media-xs)
+        .step__icon_step_1
+            svg
+                left: 0
+
+        .step__icon_step_2
+            svg
+                left: -10px
+                top: -48px
+
+        .step__icon_step_3
+            svg
+                left: -18px
+                top: -46px
+
+        .step__icon_step_4
+            svg
+                left: -14px
+                top: -52px
+
+        .step__icon_step_5
+            svg
+                left: 0
+
+.tabs__button
+
+    .step__icon
+        svg
+            opacity: 0
+            transition: $transition-fast
+
+.tabs__button_active
+    @media (min-width: $media-xs)
+        .step__icon
+            svg
+                opacity: 1
+                overflow: visible
+                transform: scale(1)
+
+        .step__icon_step_2
+            svg
+                transform: scale(1.2)
+
+        .step__icon_step_4
+            svg
+                transform: scale(0.85)
+
+.tabs__button_active
+    .step__num
+        color: $color-white
+        font-size: $fsize-h2
+    // .tabs__button + .tabs__button::before
+
+
+.tabs
+    &__content-item
+        display: none
+        // background: $color-gray-light-2
+        padding: 15px
+
+        &_state_active
+            display: inherit
+            padding-top: 8 * $base-indent

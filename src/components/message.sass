@@ -1,0 +1,39 @@
+.message
+    background: #f2f2f2
+    color: #3e3e3e
+    border-radius: 5px
+    position: relative
+    padding: 20px 25px
+    font-size: 20px
+    margin-bottom: 30px
+
+    &__icon
+        position: absolute
+        top: 24px
+
+    &__body
+        margin-left: 70px
+
+        p
+            margin-bottom: 0
+
+        p + p
+            margin-top: 18px
+
+    &_type
+        &_attention
+            background: #e3ebf2
+
+        &_warning
+            background: #ffc4b4
+
+        &_info
+            background: #fbf0dd
+
+        &_main
+            background: #F5F5F5
+
+            svg
+                fill: #cccccc
+                width: 40px
+                height: 40px

@@ -1,0 +1,64 @@
+.advantages
+    margin-top: 8 * $base-indent
+    margin-bottom: 3 * $base-indent
+
+    &__item
+        margin-bottom: 5 * $base-indent
+
+    &__icon
+        vertical-align: top
+        position: absolute
+        left: 0
+        z-index: 1
+        user-select: none
+
+        @media (min-width: $media-xs)
+            svg
+                width: 104px
+                height: 104px
+
+        @media (min-width: $media-md)
+            svg
+                width: 96px
+                height: 96px
+
+        @media (min-width: $media-lg)
+            svg
+                width: 80px
+                height: 80px
+
+        @media (min-width: $media-xl)
+            svg
+                width: 104px
+                height: 104px
+
+
+    &__content
+        vertical-align: top
+        padding-top: 4 * $base-indent
+        position: relative
+        z-index: 2
+
+        @media (min-width: $media-xs)
+            margin-left: 15 * $base-indent
+            margin-right: 0 * $base-indent
+
+        @media (min-width: $media-md)
+            margin-left: 12 * $base-indent
+            margin-right: 3 * $base-indent
+
+        @media (min-width: $media-lg)
+            margin-left: 10 * $base-indent
+            margin-right: 3 * $base-indent
+
+        @media (min-width: $media-xl)
+            margin-left: 15 * $base-indent
+
+
+    &__title
+        @extend .h5
+
+    &__desc
+        color: $color-black-2
+        font-size: $fsize-md
+        line-height: 1.25

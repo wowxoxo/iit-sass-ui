@@ -1,0 +1,31 @@
+.modal
+    &_form-order
+        background: rgba($color-black, 0.3)
+
+        .modal
+            &-content
+                @extend .mixin_modal
+                @media (min-width: $media-xs)
+                    width: 370px
+
+                @media (min-width: $media-lg)
+                    width: 370px
+
+                @media (min-width: $media-xl)
+                    width: 430px
+
+                @media (min-width: $media-xxl)
+                    width: 470px
+
+            &-header
+                background: $color-white
+                border: 0
+
+            &-title
+                font-size: $fsize
+                font-weight: 400
+                text-align: center
+                padding-left: 3 * $base-indent
+
+            &-body
+                padding: 0

@@ -1,0 +1,156 @@
+.input,
+.textarea
+    position: relative
+    display: block
+    margin-bottom: 0
+
+    &_single
+        &-md
+            @media (min-width: $media-xs)
+                margin-bottom: 3.75 * $base-indent
+
+            @media (min-width: $media-lg)
+                margin-bottom: 0
+
+
+    &__input,
+    &__textarea
+        @extend .border
+        display: block
+        font-weight: 300
+        padding: 1.75 * $base-indent - 1 2.5 * $base-indent
+        width: 100%
+        outline: none
+        height: auto
+        transition: $transition-fast
+        border-radius: $radius
+        position: relative
+        font-size: $old-fsize
+
+        &:hover
+            @extend .border
+            border-color: $color-gray-light-3
+
+            &::placeholder
+                color: $color-grey-2
+
+        &:focus,
+        &:active
+            @extend .border
+            border-color: $color-primary-light-3
+            outline: none
+            padding-bottom: 0.75 * $base-indent
+            padding-top: 2.5 * $base-indent
+
+            & + .input__placeholder,
+            & + .textarea__placeholder
+                opacity: 1
+                top: 0.5 * $base-indent
+
+            &:hover
+                border-color: $color-primary-light-3
+                // border-color: $color-primary
+
+            &::placeholder
+                color: transparent
+
+        &::placeholder
+            color: $color-gray-base
+            transition: $transition-fast
+
+        &_state
+            &_invalid
+                @extend .border
+                border-color: $color-pink
+
+                &:focus,
+                &:active
+                    outline: none
+                    border-color: $color-pink
+
+                    & + .input__placeholder,
+                    & + .textarea__placeholder
+                        color: $color-pink-op7
+
+                    &:hover
+                        border-color: $color-pink-op7
+
+                        &::placeholder
+                            color: transparent
+
+                &:hover
+                    border-color: $color-pink-op7
+
+                    &::placeholder
+                        color: $color-pink-op7
+
+                &::placeholder
+                    color: $color-pink
+
+                & + .item__placeholder
+                    color: $color-pink
+
+            &_valid
+                @extend .border
+                border-color: $color-green
+
+                &:focus,
+                &:active
+                    outline: none
+                    border-color: $color-green
+
+                    & + .input__placeholder,
+                    & + .textarea__placeholder
+                        color: $color-green-op7
+
+                    &:hover
+                        border-color: $color-green-op7
+
+                        &::placeholder
+                            color: transparent
+
+                &:hover
+                    border-color: $color-green-op7
+
+                    &::placeholder
+                        color: $color-green-op7
+
+                &::placeholder
+                    color: $color-green
+
+                & + .item__placeholder,
+                & + .textarea__placeholder
+                    color: $color-green
+
+
+    &__placeholder
+        color: $color-primary-light-3
+        font-size: $fsize-smallest
+        position: absolute
+        top: 0
+        left: 2.5 * $base-indent
+        opacity: 0
+        transition: $transition
+
+    &__error
+        position: absolute
+        left: 20px
+        font-size: $fsize-smallest
+        color: $color-pink
+        padding-top: 0.25 * $base-indent
+
+.checkbox
+    &__error
+        @extend .input__error
+        padding-left: 1.5 * $base-indent
+
+// firefox bugfix
+input
+    &:required,
+    &:invalid
+        box-shadow: none
+
+textarea
+    &:required,
+    &:invalid
+        box-shadow: none

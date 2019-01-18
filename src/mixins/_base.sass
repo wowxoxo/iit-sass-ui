@@ -1,0 +1,142 @@
+.mixin
+    &_top
+        &_4
+            top: 4px
+
+        &_8
+            top: 8px
+
+        &_12
+            top: 12px
+
+        &_n2
+            top: -2px
+
+        &_n4
+            top: -4px
+
+        &_n8
+            top: -8px
+
+        &_n12
+            top: -12px
+
+    &_left
+        &_4
+            left: 4px
+
+        &_8
+            left: 8px
+
+        &_16
+            left: 16px
+
+    &_color
+        &_white
+            color: $color-white
+
+    &_width
+        &_100p
+            width: 100%
+
+.mixin_modal
+    box-shadow: $shadow
+    border: 0
+
+.mixin_rel
+    position: relative
+
+.mixin_docs-icon
+    content: ''
+    display: block
+    height: 46px
+    width: 55px
+    position: absolute
+    left: 0
+    top: 0
+    transition: $transition
+    background-repeat: no-repeat, no-repeat
+
+.border
+    border: 1px solid $color-gray-light-1
+
+=border($thick: 1px, $style: solid, $color: $color-gray-light-1)
+    border-width: $thick
+    border-style: $style
+    border-color: $color
+
+
+.m
+    &t
+        &-8
+            margin-top: 1 * $base-indent
+
+        &-16
+            margin-top: 2 * $base-indent
+
+        &-24
+            margin-top: 3 * $base-indent
+
+        &-32
+            margin-top: 4 * $base-indent
+
+        &-40
+            margin-top: 5 * $base-indent
+
+        &-48
+            margin-top: 6 * $base-indent
+
+        &-56
+            margin-top: 7 * $base-indent
+
+.color
+    &_primary
+        color: $color-primary
+
+    &_second
+        color: $color-second
+
+    &_black-3
+        color: $color-black-3
+
+    &_smev-1-compl
+        color: $color-product-smev-1-compl
+
+.d
+    &-inline
+        display: inline
+
+    &-inline-b
+        display: inline-block
+
+
+.paragraph
+    margin-bottom: 0
+    font-weight: 300
+    @media (min-width: $media-xs)
+        line-height: 1.375
+        font-size: $fsize-md
+
+    @media (min-width: $media-md)
+        line-height: 1.5
+        font-size: $fsize
+// .pos
+//     &-a
+//         position: absolute!important
+
+.stick-shadow
+    box-shadow: $shadow
+    transition: $transition
+
+.mixin
+    &_single
+        &_md
+            @media (min-width: $media-xs)
+                margin-bottom: 3.75 * $base-indent
+
+            @media (min-width: $media-lg)
+                margin-bottom: 0
+
+
+.no-select
+    user-select: none

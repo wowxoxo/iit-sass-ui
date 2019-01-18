@@ -1,0 +1,139 @@
+.list_ul
+    list-style: none
+    padding-left: 0
+    font-weight: 300
+    line-height: 1.4
+
+    .list__item
+        position: relative
+        padding-left: 3 * $base-indent
+        margin-bottom: 1 * $fsize
+
+        .mfp
+            p
+                margin-bottom: 4 * $base-indent
+
+        p
+            margin-bottom: 2.5 * $base-indent
+
+        &::before
+            content: '—'
+            margin-right: 1.5 * $base-indent
+            position: absolute
+            left: 0
+
+        &:last-child
+            margin-bottom: 2.5 * $base-indent
+
+.list_triangle
+    list-style: none
+    padding-left: 0
+    font-weight: 300
+    line-height: 1.4
+
+    .list__item
+        position: relative
+        padding-left: 3 * $base-indent
+        margin-bottom: 1 * $fsize
+
+        p
+            margin-bottom: 2.5 * $base-indent
+
+        &::before
+            content: ''
+            margin-right: 1.5 * $base-indent
+            position: absolute
+            top: 3px
+            left: 0
+            width: 14px
+            height: 16px
+            background-image: url('/img/list-triangle.svg')
+
+        &:last-child
+            margin-bottom: 2.5 * $base-indent
+
+.list_ol
+    margin-left: 0
+    padding-left: 2.5 * $base-indent
+    font-weight: 300
+    line-height: 1.4
+
+    .list__item
+        position: relative
+        list-style-type: decimal
+        padding-left: 0.5 * $base-indent
+        margin-bottom: 1 * $fsize
+        counter-increment: item
+
+        .mfp
+            p
+                margin-bottom: 4 * $base-indent
+
+        p
+            margin-bottom: 2.5 * $base-indent
+
+        &:last-child
+            margin-bottom: 2.5 * $base-indent
+
+.list
+    &_light
+        font-weight: 200
+
+.list
+    &_small
+        font-size: $old-fsize
+
+        .list__item
+            margin-bottom: 1 * $base-indent
+
+.list_ol li .list_ul li
+    counter-reset: item
+    list-style-type: none
+    padding-left: 3 * $base-indent
+
+// .list
+//     &_bigger
+//         font-size: $fsize-smaller
+//
+// .ul-list
+//     li
+//         list-style-type: square
+//         margin-left: 1*$base-indent
+//         line-height: 1.5*$base-size
+//         padding-bottom: 0.25*$base-indent
+//
+// @media (min-width: $media-0)
+//     .ul-list, .ol-list, .ol-list_v
+//         padding-left: 0px
+//
+// @media (min-width: $media-sm)
+//     .ul-list, .ol-list, .ol-list_v
+//         padding-left: 40px
+//
+// .ol-list
+//     li
+//         list-style-type: decimal
+//         margin-left: 1*$base-indent
+//         line-height: 1.5*$base-size
+//         padding-bottom: 0.25*$base-indent
+//
+// .ol-list_v
+//     li + li
+//         margin-top: $base-indent
+//
+// .ul-list-none
+//     li
+//         list-style-type: none
+//         margin-left: 0
+//         padding-bottom: 0
+//
+// .ul-list-no-bullet
+//     li
+//         list-style-type: none
+//         margin-left: 0
+
+.list-unstyled
+    padding-left: 0
+
+    li
+        list-style: none

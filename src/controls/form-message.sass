@@ -1,0 +1,29 @@
+.form-message
+    font-size: $fsize-smallest
+    transition: $transition
+
+    &_error
+        color: $color-pink
+
+        &-submit
+            color: $color-pink
+            padding-top: 1 * $base-indent
+            position: absolute
+
+            @media (min-width: $media-xs)
+                bottom: 0
+
+            @media (min-width: $media-lg)
+                bottom: -3 * $base-indent
+
+
+        &-request
+            color: $color-pink
+            padding-top: 1 * $base-indent
+            position: relative
+
+            @media (min-width: $media-xs)
+                bottom: 0
+
+            @media (min-width: $media-lg)
+                bottom: -3 * $base-indent

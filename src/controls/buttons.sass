@@ -1,0 +1,156 @@
+.button
+    padding: 16px 24px
+    display: inline-block
+    border-radius: $radius
+    box-sizing: border-box
+    text-decoration: none
+    font-weight: 400
+    transition: $transition-fast
+    font-stretch: initial
+    border: none
+    // text-transform: uppercase
+
+    &:hover
+        text-decoration: none
+        cursor: pointer
+
+.button-primary
+    @extend .button
+    background: $color-primary
+    color: $color-white
+    font-weight: 500
+    font-size: $fsize-smallest
+    text-transform: uppercase
+    line-height: 1
+    letter-spacing: 1px
+    text-align: center
+
+    &:hover,
+    &:focus
+        color: $color-white
+        background: $color-primary-hover
+
+    &:active
+        color: $color-white
+        background: $color-primary-active
+        text-decoration: none
+
+    &:disabled
+        background: $color-dark
+
+input.button
+    @extend .button
+    padding: 19px 24px
+
+
+.button-primary-outline
+    @extend .button
+    // padding: 15px 24px
+    background: transparent
+    color: $color-primary
+    border: 1px solid $color-primary
+    font-weight: 500
+    font-size: $fsize-smallest
+    text-transform: uppercase
+    line-height: 1
+    letter-spacing: 1px
+    text-align: center
+
+    &:hover,
+    &:focus
+        color: $color-second
+        border-color: $color-second
+        background: transparent
+
+    &:active
+        color: $color-primary-active
+        border-color: $color-primary-active
+        text-decoration: none
+
+input.button-primary-outline
+    padding: 18px 24px
+
+input.button-primary, input.button-primary-outline
+    font-weight: 400
+
+.small-button
+    @extend .button
+    font-size: $fsize-smallest
+    // text-transform: uppercase
+    line-height: 12px
+    font-weight: 500
+    text-transform: uppercase
+
+
+.small-button-primary
+    @extend .small-button
+    background: $color-primary
+    color: $color-white
+
+    &:hover,
+    &:focus
+        color: $color-white
+        background: $color-primary-hover
+
+    &:active
+        color: $color-white
+        background: $color-primary-active
+        text-decoration: none
+
+
+.button-primary.disabled,
+.button-second.disabled
+    background: $color-dark
+    cursor: default
+
+.button-second
+    @extend .button-primary
+    background: $color-second
+    transition: $transition
+
+    &:hover,
+    &:focus
+        color: $color-white
+        background: $color-second-hover
+
+    &:active
+        color: $color-white
+        background: $color-second-active
+        text-decoration: none
+
+    &:disabled
+        background: $color-dark
+
+.button-smev
+    @extend .button-primary
+    background: $color-product-smev-1
+    transition: $transition
+    color: $color-black-2
+
+    &:hover,
+    &:focus
+        color: $color-black-2
+        background: $color-product-smev-1-hover
+
+    &:active
+        color: $color-black-2
+        background: $color-product-smev-1-active
+        text-decoration: none
+
+    &:disabled
+        background: $color-dark
+
+.button_no
+    background: none
+    border: 0
+    transition: $transition
+    padding: 0
+
+    &:focus
+        outline: dotted 1px $color-primary
+
+.button_no-out
+    @extend .button_no
+
+    &:focus
+        outline: none
