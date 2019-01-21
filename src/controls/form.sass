@@ -7,6 +7,7 @@
     @media (min-width: $media-xs)
         padding: 6 * $base-indent 5 * $base-indent
 
+
     &_zero
         background: none
         padding: 0
@@ -62,6 +63,31 @@
     &_fixed
         position: fixed
         top: 0
+
+    &_cloud
+        background: none
+        box-shadow: none
+        padding: 0
+        padding-right: 5 * $base-indent
+        position: relative
+
+        .form__row
+            position: relative
+
+        .input__input,
+        .textarea__textarea
+            background: $color-gray-light-0
+
+        .loader
+            left: 21 * $base-indent
+
+        .loader__inner
+            stroke: $color-primary
+
+        .input__placeholder,
+        .textarea__placeholder
+            background: $color-gray-light-0
+
 
     &__title
         // font-size: $fsize
@@ -122,6 +148,7 @@
                 @media (min-width: $media-sm)
                     margin-top: 0
 
+
     &__submitted
         position: absolute
         top: 0
@@ -148,6 +175,15 @@
 
         &_active
             display: block
+
+        &_theme
+            &_cloud
+                background: $color-grey-light
+                width: 105%
+                left: -10px
+
+                .form__submitted-content
+                    top: 20%
 
     &__close
         position: absolute

@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-default": "node-sass src/packages/default.sass dist/iit-default.css --output-style expanded && node-sass src/packages/default.sass dist/iit-default.min.css --output-style compressed",
     "build-default-with-components": "node-sass src/packages/default-with-components.sass dist/iit-default-with-components.css --output-style expanded && node-sass src/packages/default-with-components.sass dist/iit-default-with-components.min.css --output-style compressed",
-    "build-all": "npm run build-default && npm run build-default-with-components"
+    "build-default_cloud": "node-sass src/packages/default_cloud.sass dist/iit-default_cloud.css --output-style expanded && node-sass src/packages/default_cloud.sass dist/iit-default_cloud.min.css --output-style compressed",
+    "build-all": "npm run build-default && npm run build-default-with-components && npm run build-default_cloud"
   },
   "author": "wowxoxo",
   "license": "ISC",
