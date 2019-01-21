@@ -1,3 +1,5 @@
+// @import '../../../../node_modules/@iit/sass-ui/src/mixins/_base'
+
 .mixin
     &_top
         &_4
@@ -140,3 +142,52 @@
 
 .no-select
     user-select: none
+
+.nowrap
+    white-space: nowrap
+
+.h
+    &_hero
+        text-transform: uppercase
+        font-weight: 800
+        @media (min-width: $media-xs)
+            font-size: 28px
+            line-height: 1.4
+
+        @media (min-width: $media-sm)
+            font-size: 34px
+
+        @media (min-width: $media-md)
+            font-size: 48px
+
+        @media (min-width: $media-lg)
+            font-size: 64px
+
+        @media (min-width: $media-xl)
+            font-size: 80px
+
+
+        &-middle
+            text-transform: uppercase
+            font-weight: 800
+            margin-bottom: 8 * $base-indent
+            @media (min-width: $media-xs)
+                font-size: 28px
+                line-height: 1.4
+
+            @media (min-width: $media-sm)
+                font-size: 28px
+
+            @media (min-width: $media-md)
+                font-size: 34px
+
+            @media (min-width: $media-lg)
+                font-size: 48px
+
+            @media (min-width: $media-xl)
+                font-size: 48px
+
+
+.hide
+    height: 0
+    position: absolute
