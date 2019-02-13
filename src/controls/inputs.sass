@@ -4,6 +4,9 @@
     display: block
     margin-bottom: 0
 
+    &_disabled
+        pointer-events: none
+
     &_single
         &-md
             @media (min-width: $media-xs)
@@ -53,6 +56,9 @@
 
             &::placeholder
                 color: transparent
+
+        &:disabled
+            background: rgb(235, 235, 228)
 
         &::placeholder
             color: $color-gray-base
