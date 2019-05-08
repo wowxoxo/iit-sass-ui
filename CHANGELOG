@@ -38,3 +38,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Cursor pointer for link
 - radius variable
 - button-gray-light
+
+## [0.2.1] - 2019-05-08
+### Edited
+- Small fixes for button & control-message
