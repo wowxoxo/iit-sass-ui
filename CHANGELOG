@@ -42,3 +42,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.2.1] - 2019-05-08
 ### Edited
 - Small fixes for button & control-message
+
+## [0.2.2] - 2019-05-27
+### Added
+- mb mixins
+### Edited
+- Checkbox styles

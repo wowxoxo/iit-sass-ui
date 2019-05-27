@@ -62,23 +62,20 @@
     @extend .border
     border-color: $color-gray-light-2
 
-.checkbox__indicator:after
-    box-sizing: unset
+.checkbox__box .checkbox__indicator:after
     content: ''
     position: absolute
-    display: none
+    left: 4px
+    top: 3px
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyNiAyNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjYgMjYiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiBjbGFzcz0iIj48Zz48cGF0aCBkPSJtLjMsMTRjLTAuMi0wLjItMC4zLTAuNS0wLjMtMC43czAuMS0wLjUgMC4zLTAuN2wxLjQtMS40YzAuNC0wLjQgMS0wLjQgMS40LDBsLjEsLjEgNS41LDUuOWMwLjIsMC4yIDAuNSwwLjIgMC43LDBsMTMuNC0xMy45aDAuMXYtOC44ODE3OGUtMTZjMC40LTAuNCAxLTAuNCAxLjQsMGwxLjQsMS40YzAuNCwwLjQgMC40LDEgMCwxLjRsMCwwLTE2LDE2LjZjLTAuMiwwLjItMC40LDAuMy0wLjcsMC4zLTAuMywwLTAuNS0wLjEtMC43LTAuM2wtNy44LTguNC0uMi0uM3oiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD48L2c+IDwvc3ZnPg==) no-repeat center
+    background-size: contain
+    width: 12px
+    height: 12px
+    transition: transform .2s
+    transform: scale(0)
 
 .checkbox input:checked ~ .checkbox__indicator:after
-    display: block
-
-.checkbox__box .checkbox__indicator:after
-    left: 7px
-    top: 3px
-    width: 3px
-    height: $base-indent
-    border: solid $color-white
-    border-width: 0 2px 2px 0
-    transform: rotate(45deg)
+    transform: scale(1)
 
 .checkbox__box input:disabled ~ .checkbox__indicator:after
     border-color: $color-dark
