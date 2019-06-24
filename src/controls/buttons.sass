@@ -138,6 +138,24 @@ input.button-primary, input.button-primary-outline
     &:disabled
         background: $color-dark
 
+.button-gray-dark
+    @extend .button-primary
+    background: transparent
+    color: $color-gray-dark
+    border-color: $color-gray-dark
+    transition: $transition
+
+    &:hover,
+    &:focus
+        color: $color-gray-base
+        border-color: $color-gray-base
+        background: transparent
+
+    &:active
+        color: $color-gray-base
+        border-color: $color-gray-base
+        text-decoration: none
+
 .button-smev
     @extend .button-primary
     background: $color-product-smev-1
