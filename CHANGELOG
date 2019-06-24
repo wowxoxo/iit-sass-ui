@@ -52,3 +52,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.2.3] - 2019-06-24
 ### Added
 - button-gray-dark, yellow color variable
+
+## [0.2.4] - 2019-06-24
+### Fix
+- fix for button-gray-dark
