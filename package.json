@@ -11,7 +11,8 @@
     "build-default_cloud": "node-sass src/packages/default_cloud.sass dist/iit-default_cloud.css --output-style expanded && node-sass src/packages/default_cloud.sass dist/iit-default_cloud.min.css --output-style compressed",
     "build-grid-b4v1": "node-sass src/grid/b4v1.css dist/b4v1.min.css --output-style compressed",
     "build-grid-b4v2": "node-sass src/grid/b4v2.css dist/b4v2.min.css --output-style compressed",
-    "build-all": "npm run build-default && npm run build-default-with-components && npm run build-default_cloud && npm run build-grid-b4v1 && npm run build-grid-b4v2"
+    "build-grid-b4b3": "node-sass src/grid/b4b3.css dist/b4b3.min.css --output-style compressed",
+    "build-all": "npm run build-default && npm run build-default-with-components && npm run build-default_cloud && npm run build-grid-b4v1 && npm run build-grid-b4v2 && npm run build-grid-b4b3"
   },
   "files": [
     "dist/*",
