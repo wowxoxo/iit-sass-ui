@@ -60,3 +60,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.2.5] - 2019-07-08
 ### Added
 - bs4 with bs3 media quares
+
+## [0.2.6] - 2019-07-30
+### Edited
+- gray-light button hover styles
