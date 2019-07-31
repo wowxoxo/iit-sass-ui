@@ -67,6 +67,10 @@ input.button
         border-color: $color-primary-active
         text-decoration: none
 
+    &:disabled
+        color: $color-dark
+        border-color: $color-dark
+
 input.button-primary-outline
     padding: 18px 24px
 
@@ -156,6 +160,9 @@ input.button-primary, input.button-primary-outline
         color: $color-gray-base
         border-color: $color-gray-base
         text-decoration: none
+
+    &:disabled
+        background: $color-dark
 
 .button-smev
     @extend .button-primary
