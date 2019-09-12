@@ -1,0 +1,23 @@
+{
+  "projectName": "iit-sass-ui",
+  "projectUrl": "https://github.com/wowxoxo/iit-sass-ui",
+  "projectLogo": "",
+  "jsResources": [],
+  "viewportWidths": [
+    320,
+    480,
+    768,
+    1024,
+    1200
+  ],
+  "serverPort": 8889,
+  "snippetTemplate": "styleguide/template.html",
+  "cssVariables": ["styles.scss"],
+  "cssVariables1": ["src/variables/_colors.sass"],
+  "maxSassIterations": 2000,
+  "database": "styleguide/db",
+  "categories": "styleguide/db/categories.txt",
+  "uniques": "styleguide/db/uniques.txt",
+  "sassData": "styleguide/db/sassdata.txt",
+  "extension": ".txt"
+}
