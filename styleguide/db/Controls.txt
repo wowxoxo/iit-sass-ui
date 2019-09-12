@@ -1,12 +1,82 @@
 [
   {
+    "id": 2,
+    "name": "Accordion",
+    "code": "<div class=\"accordion accordion_smev\">\r\n\t<div class=\"accordion__item accordion__item_state_active\" data-tab=\"faq-smev-1\">\r\n\t\t<div class=\"accordion__title\">Что необходимо для\r\n\t\t\tподключения к СМЭВ</div>\r\n\t\t<div class=\"accordion__arrow\">\r\n\t\t\t<svg class=\"icon icon-key_arrow_down icon_size_28 icon_fill_primary-light-3\">\r\n\t\t\t\t<use xlink:href=\"/img/svg-sprite.svg#icon-key_arrow_down\"></use></svg>\r\n\t\t</div>\r\n\t</div>\r\n\t<div class=\"accordion__content-item accordion__content-item_state_active\" id=\"faq-smev-1\">\r\n\t\t<ol class=\"list list_ol\">\r\n\t\t\t<li class=\"list__item\">Оформить и направить «<a class=\"link\" href=\"/files/Prilozhenie_1.docx\" target=\"_blank\">Заявку\r\n\t\t\t\t\tна присоединение к СМЭВ</a>» в Департамент государственной\r\n\t\t\t\tполитики в области создания и развития электронного\r\n\t\t\t\tправительства Минкомсвязи России по адресу: 125375, г.\r\n\t\t\t\tМосква, ул. Тверская, д. 7. <br> Скан-копию заявки на\r\n\t\t\t\tподключение с печатью и подписью отправить электронным\r\n\t\t\t\tписьмом на адрес <a class=\"link\" href=\"mailto:smev@minsvyaz.ru\">smev@minsvyaz.ru</a>. <br>\r\n\t\t\t\tМинкомсвязи России регистрирует обращение и пересылает заявку\r\n\t\t\t\tв службу поддержки СМЭВ. Служба поддержки СМЭВ ответным\r\n\t\t\t\tписьмом информирует кредитную организацию о том, что заявка\r\n\t\t\t\tпринята и зарегистрирована.\r\n\t\t\t</li>\r\n\t\t\t<li class=\"list__item\">Отправить заявку на регистрацию\r\n\t\t\t\tинформационной системы в СМЭВ. Для этого необходимо создать\r\n\t\t\t\tотдельный ящик smev@домен_кредитной_организации.ru и\r\n\t\t\t\tотправить письмо на адрес <a class=\"link\" href=\"mailto:smev@gosuslugi.ru\">smev@gosuslugi.ru</a> с\r\n\t\t\t\tзаполненной «<a class=\"link\" target=\"_blank\" href=\"/files/Prilozhenie_2.docx\">Формой предоставления\r\n\t\t\t\t\tинформации об информационной системе</a>» и сертификатом,\r\n\t\t\t\tвыданным на организацию, в формате Base64.\r\n\t\t\t</li>\r\n\t\t</ol>\r\n\t</div>\r\n\t<div class=\"accordion__separator\"></div>\r\n\t<div class=\"accordion__item\" data-tab=\"faq-smev-2\">\r\n\t\t<div class=\"accordion__title\">Что необходимо для\r\n\t\t\tподключения к ГИС ГМП</div>\r\n\t\t<div class=\"accordion__arrow\">\r\n\t\t\t<svg class=\"icon icon-key_arrow_down icon_size_28 icon_fill_primary-light-3\">\r\n\t\t\t\t<use xlink:href=\"/img/svg-sprite.svg#icon-key_arrow_down\"></use></svg>\r\n\t\t</div>\r\n\t</div>\r\n\t<div class=\"accordion__content-item\" id=\"faq-smev-2\">\r\n\t\t<ol class=\"list list_ol\">\r\n\t\t\t<li class=\"list__item\">Направить «<a class=\"link\" target=\"_blank\" href=\"/files/Prilozhenie_3.docx\">Заявку\r\n\t\t\t\t\tна регистрацию в ГИС ГМП</a>» в двух экземплярах в\r\n\t\t\t\tтерриториальное подразделение Федерального казначейства\r\n\t\t\t\t(ТОФК).\r\n\t\t\t</li>\r\n\t\t\t<li class=\"list__item\">К заявке прикладывается\r\n\t\t\t\tнотариально заверенная копия документа, подтверждающего\r\n\t\t\t\tполномочия руководителя организации. <br> В результате\r\n\t\t\t\tподключения к ГИС ГМП банк получает у ответственного\r\n\t\t\t\tсотрудника ТОФК уникальный регистрационный номер. <br>\r\n\t\t\t\tПосле получения уникального регистрационного номера и\r\n\t\t\t\tрегистрации информационной системы в СМЭВ необходимо пройти\r\n\t\t\t\tтестирование со службой поддержки ГИС ГМП.\r\n\t\t\t</li>\r\n\t\t</ol>\r\n\t</div>\r\n\t<div class=\"accordion__separator\"></div>\r\n\t<div class=\"accordion__item\" data-tab=\"faq-smev-3\">\r\n\t\t<div class=\"accordion__title\">Как провести тестирование\r\n\t\t\tсервисов ГИС ГМП</div>\r\n\t\t<div class=\"accordion__arrow\">\r\n\t\t\t<svg class=\"icon icon-key_arrow_down icon_size_28 icon_fill_primary-light-3\">\r\n\t\t\t\t<use xlink:href=\"/img/svg-sprite.svg#icon-key_arrow_down\"></use></svg>\r\n\t\t</div>\r\n\t</div>\r\n\t<div class=\"accordion__content-item\" id=\"faq-smev-3\">\r\n\t\t<ol class=\"list list_ol\">\r\n\t\t\t<li class=\"list__item\">Направить письмо-уведомление о\r\n\t\t\t\tготовности к тестированию с заголовком «Регистрация нового\r\n\t\t\t\tУчастника» на электронный адрес <a class=\"link\" href=\"mailto:support_gisgmp@roskazna.ru\">support_gisgmp@roskazna.ru</a>\r\n\t\t\t\tс указанием следующих сведений:\r\n\t\t\t\t<ul class=\"list list_ul\">\r\n\t\t\t\t\t<li class=\"list__item\">полное наименование организации;</li>\r\n\t\t\t\t\t<li class=\"list__item\">ИНН/КПП;</li>\r\n\t\t\t\t\t<li class=\"list__item\">роль, указанная в «Заявке на\r\n\t\t\t\t\t\tрегистрацию участника» (после слов «прошу зарегистрировать\r\n\t\t\t\t\t\tв качестве...»);</li>\r\n\t\t\t\t\t<li class=\"list__item\">идентификатор, полученный при\r\n\t\t\t\t\t\tрегистрации в ФК.</li>\r\n\t\t\t\t</ul>\r\n\t\t\t</li>\r\n\t\t\t<li class=\"list__item\">В ответ на это письмо Участник\r\n\t\t\t\tполучит уведомление о регистрации в тестовой среде ГИС ГМП и\r\n\t\t\t\tможет приступать к тестированию по предложенному службой\r\n\t\t\t\tподдержки сценарию. <br> После успешного тестирования\r\n\t\t\t\tинформационной системы необходимо направить «<a class=\"link\" target=\"_blank\" href=\"/files/Prilozhenie_4.docx\">Заявку\r\n\t\t\t\t\tна получение доступа к сервису</a>». Заявка направляется\r\n\t\t\t\tпосредством почтового отправления в Департамент\r\n\t\t\t\tгосударственной политики в области создания и развития\r\n\t\t\t\tэлектронного правительства Минкомсвязи России. Скан-копию\r\n\t\t\t\tотправить электронным письмом на адрес <a class=\"link\" href=\"mailto:smev@minsvyaz.ru\">smev@minsvyaz.ru</a>.\r\n\t\t\t</li>\r\n\t\t</ol>\r\n\t</div>\r\n</div>",
+    "description": "",
+    "inlineCss": "#snippet { \n  \n}",
+    "includeJs": "false",
+    "isEdited": false,
+    "isDeleted": false
+  },
+  {
+    "id": 3,
+    "name": "Badge",
+    "code": "<div class=\"badge badge_color_orange\">Badge orange</div>\n<div class=\"badge badge_color_blue\">Badge blue</div>",
+    "description": "",
+    "inlineCss": "#snippet { \n  \n}",
+    "includeJs": "false",
+    "isEdited": false,
+    "isDeleted": false
+  },
+  {
+    "id": 4,
+    "name": "Breadcrumb",
+    "code": "<ul class=\"breadcrumb breadcrumb_hero breadcrumb_dark hero__breadcrumb\">\r\n\t<li class=\"breadcrumb__item\"><a class=\"breadcrumb__link\" href=\"#\">Главная</a></li>\r\n</ul>",
+    "description": "",
+    "inlineCss": "#snippet { \n  \n}",
+    "includeJs": "false",
+    "isEdited": false,
+    "isDeleted": false
+  },
+  {
     "id": 1,
     "name": "button",
-    "code": "<button class=\"button-primary\">I'm button</button>",
+    "code": "<button class=\"button-primary\">Button-primary</button>\n<button class=\"button-primary disabled\">Button-primary</button>\n<br>\n<br>\n<button class=\"button-primary-outline\">Button-primary-outline</button>\n<button class=\"button-primary-outline disabled\">Button-primary-outline</button>\n<br>\n<br>\n<button class=\"button-second\">Button-second</button>\n<button class=\"button-second disabled\">Button-second</button>\n<br>\n<br>\n<button class=\"button-gray-light\">button-gray-light</button>\n<button class=\"button-gray-light disabled\">button-gray-light</button>\n<br><br>\n<button class=\"button-gray-dark\">button-gray-dark</button>\n<button class=\"button-gray-dark disabled\">button-gray-dark</button>\n<br><br>\n<button class=\"button-smev\">button-smev</button>\n<br><br>\n<button class=\"button button_no\">button_no</button>\n<br><br>\n<button class=\"button button_no-out\">button_no-out</button>",
     "description": "Just button, bro",
     "inlineCss": "#snippet { \n  \n}",
     "includeJs": "false",
     "isEdited": true,
+    "isDeleted": false
+  },
+  {
+    "id": 5,
+    "name": "Checkbox",
+    "code": "<label class=\"checkbox checkbox__box\">\r\n    <p class=\"small-text\">\r\n\t\tЯ даю согласие ОАО «Инфотекс Интернет Траст» на обработку своих персональных данных в соответствии с <a href=\"https://iitrust.ru/privacy-politic/\" target=\"_blank\" class=\"link\">Политикой</a>\r\n\t</p>\r\n\t<input id=\"confirm\" type=\"checkbox\" required=\"required\" data-error=\"Согласитесь на обработку персональных данных\">\r\n\t<span class=\"checkbox__indicator\"></span>\r\n\t<div class=\"checkbox__error help-block with-errors\"></div>\r\n</label>\r\n<br>\r\n<label class=\"checkbox checkbox_error checkbox__box\">\r\n    <p class=\"small-text\">\r\n\t\tЯ даю согласие ОАО «Инфотекс Интернет Траст» на обработку своих персональных данных в соответствии с <a href=\"https://iitrust.ru/privacy-politic/\" target=\"_blank\" class=\"link\">Политикой</a>\r\n\t</p>\r\n\t<input id=\"confirm\" type=\"checkbox\" required=\"required\" data-error=\"Согласитесь на обработку персональных данных\">\r\n\t<span class=\"checkbox__indicator\"></span>\r\n\t<div class=\"checkbox__error help-block with-errors\"></div>\r\n</label>",
+    "description": "",
+    "inlineCss": "#snippet { \n  \n}",
+    "includeJs": "false",
+    "isEdited": true,
+    "isDeleted": false
+  },
+  {
+    "id": 6,
+    "name": "Form",
+    "code": "<div class=\"form\">form</div>\n<br>\n<div class=\"form form_zero\">form_zero</div>\n<br>\n<div class=\"form\">\n    <div class=\"form__title\">Form title</div>\n    <div class=\"form__content\">Form content</div>\n</div>",
+    "description": "",
+    "inlineCss": "#snippet { \n  \n}",
+    "includeJs": "false",
+    "isEdited": true,
+    "isDeleted": false
+  },
+  {
+    "id": 7,
+    "name": "Input",
+    "code": "<label class=\"input\">\n    <input type=\"text\" placeholder=\"ФИО\" required=\"required\" data-error=\"Представьтесь, пожалуйста\" autocomplete=\"off\" id=\"name\" class=\"input__input\">\n    <span class=\"input__placeholder\">ФИО</span> <div class=\"input__error help-block with-errors\">\n        <ul class=\"list-unstyled\">\n            <li>Представьтесь, пожалуйста</li>\n        </ul>\n    </div>\n</label>\n<br><br>\n<label class=\"input\">\n    <input type=\"text\" placeholder=\"ФИО\" required=\"required\" data-error=\"Представьтесь, пожалуйста\" autocomplete=\"off\" id=\"name\" class=\"input__input input__input_state_invalid\">\n    <span class=\"input__placeholder\">ФИО</span> <div class=\"input__error help-block with-errors\">\n        <ul class=\"list-unstyled\">\n            <li>Представьтесь, пожалуйста</li>\n        </ul>\n    </div>\n</label>\n<br><br>\n<label class=\"input\">\n    <input type=\"text\" placeholder=\"ФИО\" required=\"required\" data-error=\"Представьтесь, пожалуйста\" autocomplete=\"off\" id=\"name\" class=\"input__input input__input_state_valid\">\n    <span class=\"input__placeholder\">ФИО</span> <div class=\"input__error help-block with-errors\">\n        <ul class=\"list-unstyled\">\n            <li>Представьтесь, пожалуйста</li>\n        </ul>\n    </div>\n</label>",
+    "description": "",
+    "inlineCss": "#snippet { \n  \n}",
+    "includeJs": "false",
+    "isEdited": true,
+    "isDeleted": false
+  },
+  {
+    "id": 8,
+    "name": "Link",
+    "code": "<a href=\"#\" class=\"link\">link</a>\n<br>\n<a href=\"#\" class=\"link link_inactive\">link inactive</a>\n<br>\n<a href=\"#\" class=\"link link_hero\">link hero</a>\n<br>\n<a href=\"#\" class=\"link link_light\">link light</a>\n<br>\n<a href=\"#\" class=\"link link_light-2x\">link_light-2x</a>\n<br>\n<a href=\"#\" class=\"link link_dark\">link dark</a>\n<br>\n<a href=\"#\" class=\"link link_black\">link black</a>\n<br>",
+    "description": "",
+    "inlineCss": "#snippet { \n  \n}",
+    "includeJs": "false",
+    "isEdited": false,
     "isDeleted": false
   }
 ]
