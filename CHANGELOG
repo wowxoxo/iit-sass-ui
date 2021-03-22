@@ -80,3 +80,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.2.9] - 2020-10-22
 ### Edited
 - removed old fonts extensions
+
+## [0.3.0] - 2021-03-22
+### Added
+- form-only packages
