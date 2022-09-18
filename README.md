@@ -4,9 +4,9 @@
 
 It's just a library with sass components
 
-## Requirements
+## Dev requirements
 
-Node v16.x
+- Node v16.x
 
 ## Project setup
 
